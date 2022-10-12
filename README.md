@@ -10,4 +10,12 @@ For this project, we will be using a rather simplistic dataset that contains acc
 Previously the approach of time series classification has been successful on a more complex dataset (UCI HAR dataset) with accelerometer and gyroscope sensors, the dataset is more complex in terms of the sensor information (having 560 features on localization information of subjects). The goal of this project is to understand whether the added complexity of a multi-layer deep learning time series classification algorithm offers significant benefits in terms of the efficiency and the predictability when only accelerometer data is available (having only 3 features on acceleration information of subjects). 
 
 
+Proposed Methodology
+
+For the purpose of activity recognition using the accelerometer data of subjects, we will primarily be testing multi-class time series classification algorithms. We will be testing out convolutional neural networks (specifically 1D CNNs) and recurrent neural networks (specifically LSTMs). Additionally, hybrid approaches will also be tested (CNN_LSTM and convLSTM). The results of these models will be compared to single point classification approaches (SVM and ensemble random forests). For the purpose of this experiment, these fixed-point classifiers will also be created to validate on the results on the same data that is prepared for the time series classification models. 
+
+Evaluation Metrics
+
+To evaluate the models that will be built, we will be using confusion matrices, ROC curves and AUC curves. Estimates of the overall accuracy, recall, F-1 and precision will be compared across the models. The primary goal is to compare the best single point classifier with the best time series classifier using the evaluation metric metrics identified. 
+
 
