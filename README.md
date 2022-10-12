@@ -1,35 +1,13 @@
-# human-activity-recognition-with-deep-learning-and-ensemble-methods
-This repository is currently a work in progress. 
 
-Goal:
-To merge deep learning and ensemble methods for human activity recognition using localization data. 
-
-Data Creators:
-Mitja Lustrek (mitja.lustrek '@' ijs.si), Bostjan Kaluza (bostjan.kaluza '@' ijs.si), Rok Piltaver (rok.piltaver '@' ijs.si), 
-Jana Krivec (jana.krivec '@' ijs.si), Vedrana Vidulin (vedrana.vidulin '@' ijs.si)
+A Deep Learning Multi-Class Time Series Approach for Activity Recognition from a Single Chest-Mounted Sensor
 
 
-Description of data:
-People used for recording of the data were wearing four tags (ankle left, ankle right, belt and chest).
-Each instance is a localization data for one of the tags. The tag can be identified by one of the attributes.
 
-Attribute Information:
+Activity recognition is the problem of predicting movement and detecting activity of a person from sensor data. These sensors are often accelerometers and gyroscopes, and they capture activity data when mounted as smartphones or wearables (smart watches). It has been an active area of research recently since wearables (particularly for fitness tracking) are gaining popularity. Activity recognition data is collected over time as a subject performs an activity and the sensor tracks movements over fixed intervals of time. However, the problem of activity recognition is approached either as single point classification or as time series classification. The advantage in using time series classification is that it allows to model upon the temporal coherence information that is made available as an activity is recorded over a time interval rather than as a single point observation. 
 
-Instance example: A01,020-000-033-111,633790226057226795,27.05.2009 14:03:25:723,4.292500972747803,2.0738532543182373,1.36650812625885,walking
+For this project, we will be using a rather simplistic dataset that contains accelerometer data from 15 subjects who perform a variety of tasks. Data is collected as acceleration in 3 dimensions (x, y and z axes). We will be expanding on the existing research on this dataset by applying deep learning multi class time series classification algorithms to identify the activity. Previously, the dataset has been used with single point ensemble classification algorithms. We will be exploring the advantage of taking into account the temporal information of this dataset. Existing single point classification algorithms will also be implemented to benchmark the results. 
 
-1) Sequence Name {A01,A02,A03,A04,A05,B01,B02,B03,B04,B05,C01,C02,C03,C04,C05,D01,D02,D03,D04,D05,E01,E02,E03,E04,E05} (Nominal)
-- A, B, C, D, E = 5 people
-2) Tag identificator {010-000-024-033,020-000-033-111,020-000-032-221,010-000-030-096} (Nominal)
-- ANKLE_LEFT = 010-000-024-033
-- ANKLE_RIGHT = 010-000-030-096
-- CHEST = 020-000-033-111
-- BELT = 020-000-032-221
-3) timestamp (Numeric) all unique
-4) date FORMAT = dd.MM.yyyy HH:mm:ss:SSS (Date)
-5) x coordinate of the tag (Numeric)
-6) y coordinate of the tag (Numeric)
-7) z coordinate of the tag (Numeric)
-8) activity {walking,falling,'lying down',lying,'sitting down',sitting,'standing up from lying','on all fours','sitting on the ground','standing up from sitting','standing up from sitting on the ground'} (Nominal)
+Previously the approach of time series classification has been successful on a more complex dataset (UCI HAR dataset) with accelerometer and gyroscope sensors, the dataset is more complex in terms of the sensor information (having 560 features on localization information of subjects). The goal of this project is to understand whether the added complexity of a multi-layer deep learning time series classification algorithm offers significant benefits in terms of the efficiency and the predictability when only accelerometer data is available (having only 3 features on acceleration information of subjects). 
 
 
 
