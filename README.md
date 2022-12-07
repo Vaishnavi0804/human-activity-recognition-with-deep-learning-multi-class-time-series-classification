@@ -1,6 +1,3 @@
-
-> ## This repository is a work in progress. 
-
 # A Deep Learning Multi-Class Time Series Approach for Activity Recognition from a Single Chest-Mounted Sensor
 
 
@@ -15,7 +12,7 @@ Previously the approach of time series classification has been successful on a m
 
 ### Proposed Methodology
 
-For the purpose of activity recognition using the accelerometer data of subjects, we will primarily be testing multi-class time series classification algorithms. We will be testing out convolutional neural networks (specifically 1D CNNs) and recurrent neural networks (specifically LSTMs). Additionally, hybrid approaches will also be tested (CNN_LSTM and convLSTM). The results of these models will be compared to single point classification approaches (SVM and ensemble random forests). For the purpose of this experiment, these fixed-point classifiers will also be created to validate on the results on the same data that is prepared for the time series classification models. 
+For the purpose of activity recognition using the accelerometer data of subjects, we will primarily be testing multi-class time series classification algorithms. We will be testing out convolutional neural networks (specifically 1D CNNs) and recurrent neural networks (specifically LSTMs). Additionally, Bi Directional LSTM will also be tested. The results of these models will be compared to single point classification approaches (KNN and ensemble random forests). For the purpose of this experiment, these fixed-point classifiers will also be created to validate on the results on the same data that is prepared for the time series classification models. 
 
 ### Evaluation Metrics
 
