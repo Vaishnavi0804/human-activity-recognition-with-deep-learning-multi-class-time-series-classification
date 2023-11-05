@@ -1,6 +1,6 @@
 > ## [Read Paper Here](https://www.researchgate.net/publication/366121073_A_Deep_Learning_Multi-Class_Time_Series_Classification_Approach_for_Human_Activity_Recognition?_sg%5B0%5D=Fqcd0GJfkI4SbOwUv75bRAhbVJ_L0M17kSW7PJAIR5F2umpPeDX9pF_pr-iD2mKLfdRAOsO32YeW7_CzdQfm95vtSz9DyVVVulQDSlGY.9lY7lCZmglY_ZEqRIN3Ricq6aEterBoxFJDE_mgunu9SpssFWVOGPGBwGRUuk4BxBTGiaihG4VmNOFWMbacKww)
 
-# A Deep Learning Multi-Class Time Series Approach for Activity Recognition
+# A Deep Learning Multi-Class Time Series Approach for Human Activity Recognition
 
 ![image](https://github.com/syedhadi816/human-activity-recognition-with-deep-learning-multi-class-time-series-classification/assets/53166976/fd8981f5-9be5-4886-a4c4-fc64f0e0b48d)
 Image Source: HAR (Human Activity Recognition Using Smartphones), Davide Anguita et al. in A Public Domain Dataset for Human Activity Recognition using Smartphones
