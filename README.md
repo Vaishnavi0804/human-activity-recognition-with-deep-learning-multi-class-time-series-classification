@@ -2,6 +2,8 @@
 
 # A Deep Learning Multi-Class Time Series Approach for Activity Recognition
 
+![image](https://github.com/syedhadi816/human-activity-recognition-with-deep-learning-multi-class-time-series-classification/assets/53166976/fd8981f5-9be5-4886-a4c4-fc64f0e0b48d)
+
 
 ### Description
 
